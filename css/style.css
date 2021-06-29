@@ -221,6 +221,7 @@ if it's not present, don't show loader */
   }
 }
 
+
 /* #CSS RESET
  ===================================================================*/
 html, body, div, span, applet, object, iframe, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, fieldset, form, label, legend, caption, tbody, tfoot, thead, tr, th, td {
@@ -460,7 +461,7 @@ body {
   width: 16px;
   height: 16px;
   border-radius: 50%;
-  border: 1px solid #4b4e53;
+  border: 1px solid #ffffff;
 }
 .header-black-white .cd-search-trigger::before {
 	border-color: rgba(255,255,255, .8);
@@ -475,7 +476,7 @@ body {
   /* handle */
   height: 1px;
   width: 8px;
-  background: #4b4e53;
+  background: #ffffff;
   bottom: 16px;
   right: 13px;
   -webkit-transform: rotate(45deg);
@@ -1842,81 +1843,7 @@ table.shopping-cart-table tr th, table.shopping-cart-table tr td {
   display: block;
   overflow: hidden;
 }
-.port-overlay-cont {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 0;
-  z-index: 2;
-  -webkit-transition: all .3s cubic-bezier(0.300, 0.100, 0.580, 1.000);
-  -o-transition: all .3s cubic-bezier(0.300, 0.100, 0.580, 1.000);
-  transition: all .3s cubic-bezier(0.300, 0.100, 0.580, 1.000);
-}
-.port-main-img {
-  -webkit-transition: all .3s cubic-bezier(0.300, 0.100, 0.580, 1.000);
-  -o-transition: all .3s cubic-bezier(0.300, 0.100, 0.580, 1.000);
-  transition: all .3s cubic-bezier(0.300, 0.100, 0.580, 1.000);
-}
-.lightbox-item {
-  position:relative;
-}
-.lightbox-item  .port-btn-cont {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-left: -12px;
-  margin-top: -28px;
-  -webkit-transition: all .3s cubic-bezier(0.300, 0.100, 0.580, 1.000);
-  -o-transition: all .3s cubic-bezier(0.300, 0.100, 0.580, 1.000);
-  transition: all .3s cubic-bezier(0.300, 0.100, 0.580, 1.000);
-}
-.lightbox-item:hover  .port-btn-cont {
-  margin-top: -12px;
-}
-.lightbox-item  .port-btn-cont {
-  font-size:26px;
-  color:#fff;
-}
-.lightbox-item  .port-btn-cont.lightbox-video {
-  margin-left: -18px;
-  margin-top: -32px;
-}
-.lightbox-item:hover  .port-btn-cont.lightbox-video {
-  margin-top: -17px;
-}
-.lightbox-item  .port-btn-cont.lightbox-video {
-  font-size:34px;
-}
-.port-item:hover .port-overlay-cont, .lightbox-item:hover .port-overlay-cont {
-  opacity: 1;
-}
-.port-item:hover .port-main-img, .lightbox-item:hover .port-main-img {
-  -webkit-transform: scale(1.3) translateZ(0);
-	-ms-transform: scale(1.3) translateZ(0);
-	transform: scale(1.3) translateZ(0);
-}
-.port-item:hover .port-img-overlay:after, .lightbox-item:hover .port-img-overlay:after {
-  background: rgba(16,16,16, .85);
-}
-.port-item .port-img-overlay:after , .lightbox-item .port-img-overlay:after  {
-  content: "";
-  display: block;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background: rgba(255,255,255, 0);
-  -webkit-transition: all 0.27s cubic-bezier(0.300, 0.100, 0.580, 1.000);
-  -o-transition: all 0.27s cubic-bezier(0.300, 0.100, 0.580, 1.000);
-  transition: all 0.27s cubic-bezier(0.300, 0.100, 0.580, 1.000);
-}
-.port-img-overlay {
-  position: relative;
-  overflow: hidden;
-} 
+
 .port-btn-cont a{
   display:inline-block;
 } 
@@ -2159,7 +2086,7 @@ table.shopping-cart-table tr th, table.shopping-cart-table tr td {
   margin: 0;
   padding: 0;
   background: #2c2c2c url(../images/work-proc-bg.jpg) fixed;
-  background-size: contain;
+  background-size: cover;
   color:#f1f1f1;
 }
 .work-proc-1-bg h3, .work-proc-1-bg .icon  {
@@ -3243,7 +3170,7 @@ select.input-border {
 	padding:38px 3px 5px 3px;
 	margin: 0 12px 17px 12px;
 	border-bottom: 2px solid rgba(45,78,83,0);
-	color:#4b4e53;
+	color:#ffffff;
   letter-spacing:2px;
   background-color: transparent;
 }
@@ -3255,7 +3182,7 @@ select.input-border {
 	padding:38px 3px 5px 3px;
 	margin: 0 12px 17px 12px;
 	border-bottom: 2px solid rgba(45,78,83,1);
-	color:#4b4e53; 
+	color:#ffffff; 
 }
 .black-header #main-menu .navbar .nav > li.current > a, .header-black-white #main-menu .navbar .nav > li.current > a {
 	border-bottom: 2px solid rgba(255,255,255,1);
@@ -3321,7 +3248,7 @@ select.input-border {
 	padding-top:10px;
 }
 #main-menu .navbar .nav > li:hover > a {
-  color:#111; 
+  color:rgb(83, 83, 83); 
 }
 .black-header #main-menu .navbar .nav > li:hover > a, .header-black-white #main-menu .navbar .nav > li:hover > a {
   color:#fff; 
@@ -3725,7 +3652,7 @@ background:none;
 	z-index:29;
 }
 .header.no-transparent .header-wrapper{
-  background:#fff;
+  background:rgb(110, 110, 110);
 }
 .border-b{
   border-bottom: 1px solid #eee;
@@ -3826,6 +3753,7 @@ header.affix  .logo-2, .header.affix.no-transparent .logo-2 {
 }
 .logo-img {
   height: 42px;
+  
 }
 .logo-img.logo-color-change {
   -webkit-filter: brightness(0) invert(1);
